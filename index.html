@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Responsive navbar</title>
+</head>
+
+<body>
+    <nav>
+        <div class="md:flex items-center justify-between md:max-w-6xl mx-auto">
+
+            <!-- nav-header -->
+            <div class="flex items-center justify-between p-4 text-2xl">
+                <a href="./index.html">
+                    <h1>Responsive <span class="text-[#49A6E9]">Navbar</span></h1>
+                </a>
+                <button class="text-2xl text-[#49A6E9] hover:text-[#063251] md:hidden" id="toggle-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- nav-links -->
+
+            <ul class="md:flex md:h-auto hide-links" id="links">
+                <li class="list-item">
+                    <a href="">Home</a>
+                </li>
+                <li class="list-item">
+                    <a href="">About</a>
+                </li>
+                <li class="list-item">
+                    <a href="">Service</a>
+                </li>
+                <li class="list-item">
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+
+            <!-- social-media-icon -->
+
+            <ul class="hidden md:flex gap-4 px-4">
+                <li class="text-[#49A6E9] hover:text-gray-900">
+                    <a target="_blank" href="https://www.facebook.com">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="text-[#49A6E9] hover:text-gray-900">
+                    <a target="_blank" href="https://www.twitter.com">
+                        <i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="text-[#49A6E9] hover:text-gray-900">
+                    <a target="_blank" href="https://www.linkedin.com">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="text-[#49A6E9] hover:text-gray-900">
+                    <a target="_blank" href="https://www.medium.com">
+                        <i class="fa-brands fa-medium"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- main section -->
+
+    <main class="md:max-w-6xl mx-auto">
+        <div class="p-4 mt-20 w-8/12 mx-auto">
+            <h1 class="text-3xl text-center text-white hidden md:block">Reduce the browser window size to less than 768px to see hamburger button and toggle effect.</h1>
+            <h1 class="text-2xl text-center text-white md:hidden">Click the hamburger button.</h1>
+        </div>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
